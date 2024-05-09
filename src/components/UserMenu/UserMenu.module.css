@@ -1,0 +1,28 @@
+.userMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.userMenu p {
+  color: #ccc;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.userMenu button {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.userMenu button:hover {
+  background-color: #ccc;
+}

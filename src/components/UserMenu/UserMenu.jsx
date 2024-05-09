@@ -1,3 +1,4 @@
+import css from "./UserMenu.module.css"
 import { useDispatch, useSelector } from "react-redux"
 import { logout } from "../../redux/auth/operations"
 import { NavLink, useNavigate } from "react-router-dom"
@@ -15,8 +16,8 @@ const UserMenu = ({ buildLinkClass }) => {
     }
 
   return (
-      <div>
-          <NavLink className={buildLinkClass} to="/contacts">Contacts</NavLink>
+      <div className={css.userMenu}>
+      <NavLink className={ buildLinkClass } to="/contacts">Contacts</NavLink>
           <p className={buildLinkClass}>Welcome, {userEmail}</p>
           <button type="button" onClick={handleLogout}>Logout</button>
     </div>

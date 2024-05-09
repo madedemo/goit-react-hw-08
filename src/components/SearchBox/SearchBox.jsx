@@ -11,6 +11,7 @@ const SearchBox = () => {
   
   return (
     <div>
+      <span className={css.searchIcon}>🔍</span>
       <input
         type="text"
         placeholder="Search by name..."

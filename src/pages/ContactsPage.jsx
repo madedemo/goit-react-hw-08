@@ -11,7 +11,8 @@ const ContactsPage = () => {
     const dispatch = useDispatch();
     const contacts = useSelector(selectContacts);
 
-    useEffect(() => {
+  useEffect(() => {
+      console.log('Entering useEffect in UserMenu');
         dispatch(fetchContacts())
     }, [dispatch])
 
